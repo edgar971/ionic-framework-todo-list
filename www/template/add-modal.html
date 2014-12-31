@@ -1,0 +1,21 @@
+<ion-modal-view>
+ 	<div class="bar bar-header bar-stable">
+    	<button class="button" ng-click="closeItemModal()">back</button>
+		<h1 class="title">Add Item</h1>
+  	</div>
+  	
+
+  <form ng-submit="addItem(data)">
+    <div class="row" style="height: 20em;">
+      <div class="col col-bottom list list-inset">
+	        <label class="item item-input">
+	          <input type="text" placeholder="What's new?" ng-model="data.todoItem">
+	        </label>
+	      <button class="button button-block button-positive" type="submit">
+	        Add Item
+	      </button>
+      </div>
+      
+    </div>
+  </form> 
+</ion-modal-view>
