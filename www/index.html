@@ -32,7 +32,8 @@
       </ion-header-bar>
       <ion-content>
       	<ion-list >
-      		<ion-item ng-repeat="item in TodoListItems">
+      		<ion-item ng-repeat="item in TodoListItems" class="list-inset">
+      			<i class="icon ion-checkbox"></i>
       			{{item.task}}
       		</ion-item>
       		
